@@ -1,0 +1,148 @@
+:root {
+  font-family: 'Faro', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1A1818;
+}
+body {
+  margin: 0;
+  display: grid;
+  min-width: 320px;
+  min-height: 100vh;
+  position: relative;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* Icon Styling */
+.icon-box {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  background-color: #2e2c2c;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out
+}
+.icon-box:hover {
+  background-color: #3a3838;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+  padding: 8px;
+  border-radius: 2px;
+  transition: height 0.2s ease-in-out, width 0.2s ease-in-out ; /* ← smoother & longer */
+  color: white
+}
+.icon:hover {
+  height: 30px;
+  width: 30px;
+}
+
+.info{
+  font-family: "Arial";
+  color: #a8a8a8;
+  font-size: 15px; 
+}
+
+/* Heading Styling */ 
+#heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background-color: #1A1818; 
+  width: 1100;
+}
+#profile-img {
+  width:58px;
+  height:58px;
+  border-radius: 2px;
+}
+#name {
+  font-family: 'Red Rose';
+  font-weight: 600;
+  font-size: 20px;
+}
+#profileInfo {
+  display: flex;
+  flex-direction: column;
+}
+#heading-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: end;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+/* Main Page Stylig */
+#landing {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  gap: 24px;
+}
+#description {
+  width: 1100;
+  font-size: 15.5px;
+}
+.section-title{
+  font-size: 38px;
+  font-weight: 500;
+  font-family: 'Red Rose';
+}
+.pro-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px;
+  height: auto;
+}
+.project-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px;
+}
+
+/* Context Box Styling*/
+.content-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #242323;
+  padding: 14px;
+  border-radius: 3px;
+  gap: 10px
+}
+#pro-box {
+  width: 480px;
+}
+#project-box {
+  width: 300px;
+}
+.title {
+  font-family: 'Red Rose';
+  font-size: 28px;
+  font-weight: 600;
+}
+.content-box-img {
+  width: 100%;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+/* Footer Styling */ 
+#footer-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
