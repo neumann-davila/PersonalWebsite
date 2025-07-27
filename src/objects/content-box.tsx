@@ -1,14 +1,9 @@
 
-type LinkInfo = {
-  linkName: string;
-  link: string;
-}
 type ContentBoxProps = {
   id: string;
   imgPath: string;
   title: string;
   date?: string;
-  links?: LinkInfo[]
   children: React.ReactNode;
 }
 
@@ -17,7 +12,6 @@ export function ContentBox( {
   imgPath,
   title,
   date = "NULL",
-  links = [{linkName: "NULL", link: "NULL"}],
   children
 }: ContentBoxProps) {
   let dateObject = null;
@@ -28,12 +22,12 @@ export function ContentBox( {
 
   return (
     <div className="content-box" id={id}>
-      <img src={imgPath} className='content-box-img'/>
+      <img src={imgPath} className='content-box-img' id={`${id}-img`}/>
       <div className='title'>
         {title}
       </div>
       {dateObject}
-      <div className="info">
+      <div className="info" id="content">
         {children}
       </div>
     </div>

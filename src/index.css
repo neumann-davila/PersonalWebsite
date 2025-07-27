@@ -3,7 +3,7 @@
   line-height: 1.5;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #1A1818;
+  background-color: #111111;
 }
 body {
   margin: 0;
@@ -42,6 +42,35 @@ body {
   width: 30px;
 }
 
+.button-group {
+  width: 100%;
+  margin-top: auto;
+}
+.button {
+  display: flex;
+  width: auto;
+  font-weight: 600;
+  color: rgb(221, 221, 221);
+  padding: 8px;
+  background-color: #2e2c2c;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+.button:hover {
+  background-color: #3a3838;
+  cursor: pointer;
+}
+.upload-icon {
+  padding: 5px;
+  height: 18px;
+}
+#devpost {
+  width: 100px;
+}
+
 .info{
   font-family: "Arial";
   color: #a8a8a8;
@@ -54,7 +83,6 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 1rem;
-  background-color: #1A1818; 
   width: 1100;
 }
 #profile-img {
@@ -116,7 +144,7 @@ body {
 .content-box {
   display: flex;
   flex-direction: column;
-  background-color: #242323;
+  background-color: #1d1c1c;
   padding: 14px;
   border-radius: 3px;
   gap: 10px
@@ -125,8 +153,13 @@ body {
   width: 480px;
 }
 #project-box {
-  width: 300px;
+  width: 310px;
 }
+#project-box-img {
+  width: 100%;
+  height: 140px;
+}
+
 .title {
   font-family: 'Red Rose';
   font-size: 28px;
@@ -138,6 +171,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: auto;
+}
+#content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 8px;
 }
 
 /* Footer Styling */ 

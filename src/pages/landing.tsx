@@ -1,6 +1,10 @@
 import "../index.css";
 import { ContentBox } from "../objects/content-box";
+import { SquareArrowOutUpRight } from 'lucide-react';
 import awsLogo from '../resources/aws-logo.jpg';
+import vtMates from '../resources/VTMates.png';
+import intelliQuestLogo from '../resources/intelliQuest-logo.svg';
+import teacherAidLogo from '../resources/teacher-aid-logo.svg'
 
 export function Landing() {
 	return (
@@ -39,27 +43,58 @@ export function Landing() {
 				<div className="project-row">
 					<ContentBox 
 						id="project-box" 
-						imgPath={awsLogo}
+						imgPath={teacherAidLogo}
 						title="HackViolet 2025 Teacher Aid"
 					>
 						Full stack classroom management system to aid in project based learning, allowing
 						students to signal where they are located, and how much help they need
-					</ContentBox>
+						<div className="button-group">
+							<a 
+								className="button" 
+								id="devpost" 
+								href="https://devpost.com/software/teacheraid"
+								target="_blank"
+							>
+								Devpost {<SquareArrowOutUpRight className="upload-icon"/>}
+							</a>
+						</div>					</ContentBox>
 					<ContentBox 
 						id="project-box" 
-						imgPath={awsLogo}
+						imgPath={intelliQuestLogo}
 						title="VTHax 2024 IntelliQuest"
 					>
 						Full stack AI chatbot tool for table top role playing games that is completely managed 
 						by the AI model.
+						<div className="button-group">
+							<a 
+								className="button" 
+								id="devpost" 
+								href="https://devpost.com/software/intelliquest-0or46l"
+								target="_blank"
+							>
+								Devpost {<SquareArrowOutUpRight className="upload-icon"/>}
+							</a>
+						</div>
 					</ContentBox>
 					<ContentBox 
 						id="project-box" 
-						imgPath={awsLogo}
-						title="HacvkViolet 2024 VTMates"
+						imgPath={vtMates}
+						title="HackViolet 2024 VTMates"
 					>
-						Frotned for tool to help off campus students connect with other students in their area for
-						social gatherings and study groups
+						<div>
+							Frotned for tool to help off campus students connect with other students in their area for
+							social gatherings and study groups
+						</div>
+						<div className="button-group">
+							<a 
+								className="button" 
+								id="devpost" 
+								href="https://devpost.com/software/vtmates"
+								target="_blank"
+							>
+								Devpost {<SquareArrowOutUpRight className="upload-icon"/>}
+							</a>
+						</div>
 					</ContentBox>
 				</div>
 			</div>
