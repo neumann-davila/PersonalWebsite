@@ -1,7 +1,8 @@
 import "../index.css";
 import { ContentBox } from "../objects/content-box";
 import { SquareArrowOutUpRight } from 'lucide-react';
-import awsLogo from '../resources/aws-logo.jpg';
+import awsLogo from '../resources/aws-logo-1.png';
+import vtLogo from '../resources/vt-logo.png'
 import vtMates from '../resources/VTMates.png';
 import intelliQuestLogo from '../resources/intelliQuest-logo.svg';
 import teacherAidLogo from '../resources/teacher-aid-logo.svg'
@@ -35,6 +36,21 @@ export function Landing() {
 					>
 						Building a full stack AI chatbot for AWS CloudFront Routing internal debugging, by utilizing
 						internal data sources and APIs.
+					</ContentBox>
+				</div>
+			</div>
+			<div id="research">
+				<div className="section-title">Research Experience</div>
+				<div className="research-row">
+					<ContentBox 
+						id="pro-box" 
+						imgPath={vtLogo}
+						title="PhD Shadow"
+						date="January 2025 - May 2025"
+					>
+						Assisting a PhD student with their research project studying buck converters with
+						high frequecy transistors and phototransistors in cryogenic temperatures for Quatum Technology
+						applciations. 
 					</ContentBox>
 				</div>
 			</div>

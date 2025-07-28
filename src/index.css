@@ -34,12 +34,15 @@ body {
   width: 24px;
   padding: 8px;
   border-radius: 2px;
-  transition: height 0.2s ease-in-out, width 0.2s ease-in-out ; /* ← smoother & longer */
+  transition: height 0.2s ease-in-out,
+    width 0.2s ease-in-out,
+    color 0.2s ease-in-out; /* ← smoother & longer */
   color: white
 }
 .icon:hover {
   height: 30px;
   width: 30px;
+  color: rgb(99, 99, 250);
 }
 
 .button-group {
@@ -57,18 +60,33 @@ body {
   align-items: center;
   border-radius: 4px;
   text-decoration: none;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out,
+    font-size 0.2s ease-in-out;
 }
 .button:hover {
   background-color: #3a3838;
   cursor: pointer;
+  color: rgb(99, 99, 250);
+  font-size: 16;
+  
 }
 .upload-icon {
-  padding: 5px;
+  padding: 3px;
+  padding-bottom: 2px;
+  height: 16px;
+  align-self: center;
+  transition: height 0.2s ease-in-out,
+    padding-bottom 0.2s ease-in-out;
+}
+.button:hover .upload-icon {
+  padding-bottom: 3px;
   height: 18px;
 }
+
 #devpost {
   width: 100px;
+  height: 30px;
 }
 
 .info{
@@ -139,6 +157,10 @@ body {
   gap: 24px;
   padding: 24px;
 }
+.research-row {
+  padding: 24px;
+  padding-left: 38px;
+}
 
 /* Context Box Styling*/
 .content-box {
@@ -150,6 +172,9 @@ body {
   gap: 10px
 }
 #pro-box {
+  width: 480px;
+}
+#pro-box-img {
   width: 480px;
 }
 #project-box {
@@ -180,6 +205,17 @@ body {
 }
 
 /* Footer Styling */ 
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 14px;
+}
 #footer-icons {
   display: flex;
   gap: 15px;
