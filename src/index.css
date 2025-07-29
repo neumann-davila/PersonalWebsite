@@ -45,16 +45,12 @@ body {
   color: rgb(99, 99, 250);
 }
 
-.button-group {
-  width: 100%;
-  margin-top: auto;
-}
 .button {
   display: flex;
-  width: auto;
   font-weight: 600;
   color: rgb(221, 221, 221);
   padding: 8px;
+  font-size: 16px;
   background-color: #2e2c2c;
   justify-content: center;
   align-items: center;
@@ -68,8 +64,7 @@ body {
   background-color: #3a3838;
   cursor: pointer;
   color: rgb(99, 99, 250);
-  font-size: 16;
-  
+  font-size: 18px;
 }
 .upload-icon {
   padding: 3px;
@@ -202,6 +197,72 @@ body {
   height: 100%;
   flex-direction: column;
   gap: 8px;
+}
+
+.tag {
+  display: flex;
+  font-weight: 630;
+  color: #3a3a3ab7;
+  background-color: #2e2c2c;
+  padding: 3px;
+  border-radius: 8px;
+  justify-content: center;
+}
+.tag-box {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start; 
+}
+#react {
+  width: 60px;
+  background-color: rgb(16, 120, 218);
+}
+#js {
+  width: 96px;
+  background-color: rgb(233, 198, 0)
+}
+#ts {
+  width: 96px;
+  background-color: rgb(72, 167, 255);
+}
+#aws {
+  width: 90px;
+  background-color: rgb(247, 177, 47);
+}
+#java {
+  width: 50px;
+  background-color: rgb(241, 60, 47);
+}
+#sql {
+  width: 36px;
+  background-color: rgb(47, 241, 150);
+}
+#spark {
+  width: 114px;
+  background-color: rgb(241, 108, 47);
+}
+#grafana {
+  width: 80px;
+  background-color: rgb(252, 135, 26);
+}
+#express {
+  width: 70px;
+  background-color: rgb(120, 197, 75);
+}
+#web-socket {
+  width: 98px;
+  background-color: rgb(54, 143, 3);
+}
+#lab-experience {
+  width: 128px;
+  background-color: rgb(75, 148, 197);
+}
+#electronics-testing {
+  width: 150px;
+  background-color: rgb(142, 102, 253);
 }
 
 /* Footer Styling */ 

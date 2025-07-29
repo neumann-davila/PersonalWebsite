@@ -1,3 +1,9 @@
+import { Button } from './button.tsx'
+
+type tag = {
+  name: string;
+  id: string;
+}
 
 type ContentBoxProps = {
   id: string;
@@ -5,30 +11,38 @@ type ContentBoxProps = {
   title: string;
   date?: string;
   children: React.ReactNode;
+  tags? : tag[]
+  buttons?: JSX.Element[]
 }
 
 export function ContentBox( { 
   id,
   imgPath,
   title,
-  date = "NULL",
-  children
+  date,
+  children,
+  tags,
+  buttons,
 }: ContentBoxProps) {
-  let dateObject = null;
-
-  if(date != "NULL") {
-    dateObject = <div>{date}</div>
-  }
-
   return (
     <div className="content-box" id={id}>
       <img src={imgPath} className='content-box-img' id={`${id}-img`}/>
       <div className='title'>
         {title}
       </div>
-      {dateObject}
+      {date && <div>{date}</div>}
       <div className="info" id="content">
         {children}
+      </div>
+      <div className="tag-box">
+        {tags && 
+        tags.map((tag) => (
+          <div className="tag" id={tag.id}>{tag.name}</div>
+        ))
+      }
+      </div>
+      <div>
+        {buttons}
       </div>
     </div>
   );
