@@ -5,14 +5,14 @@ type IconGroupProps = {
 };
 
 export function IconGroup ({ id }: IconGroupProps) {
-    return (
-        <div id={id}>
-            <a className="icon-box" href="https://github.com/neumann-davila" target="_blank">
-                <Github className="icon"/>
-            </a>
-            <a className="icon-box" href="https://linkedin.com/in/neumann-davila" target="_blank">
-                <Linkedin className="icon"/>
-            </a>
-        </div>
-    );
+  return (
+    <div id={id}>
+      <a className="icon-box" href="https://github.com/neumann-davila" target="_blank">
+        <Github className="icon"/>
+      </a>
+      <a className="icon-box" href="https://linkedin.com/in/neumann-davila" target="_blank">
+        <Linkedin className="icon"/>
+      </a>
+    </div>
+  );
 }
