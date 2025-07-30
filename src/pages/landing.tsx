@@ -68,7 +68,7 @@ export function Landing() {
 						]}
 					>
 						Assisting a PhD student with their research project studying buck converters with
-						high frequecy transistors and phototransistors in cryogenic temperatures for Quatum Technology
+						high frequecy transistors and phototransistors in cryogenic temperatures for Quantum Technology
 						applciations. 
 					</ContentBox>
 				</div>
