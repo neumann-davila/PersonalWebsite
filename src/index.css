@@ -172,9 +172,6 @@ body {
   border-radius: 3px;
   gap: 10px
 }
-#pro-box {
-
-}
 #pro-box-img {
   width: 100%;
 }
@@ -308,7 +305,7 @@ body {
     width: 100%;
   }
   #pro-box {
-    width: 380px;
+    width: 310px;
     margin-left: auto;
     margin-right: auto;
   }
