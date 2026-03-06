@@ -12,10 +12,10 @@ To start a development server:
 bun dev
 ```
 
-To run for production:
+To run for deploy to gh-pages:
 
 ```bash
-bun start
+bun run deploy
 ```
 
 This project was created using `bun init` in bun v1.2.19. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
