@@ -12,10 +12,11 @@ export function Landing() {
 	return (
 		<div id="landing">
 			<div className="info" id="description">
-				I am an undergraduate Electrical and Computer Engineering student passionate about all aspects of computing—from
-				software engineering to cutting-edge research in computing hardware. I love exploring the technologies that power 
-				our world behind the scenes and am eager to deepen my knowledge in these areas. Currently, I am seeking internships 
-				in Software Engineering and Computer Hardware Research to apply my skills and grow professionally.
+				I am an undergraduate Electrical Engineering student minoring in Physics and Quantum Information Sciences and Technologies at Virginia Tech. 
+				I am passionate about the full computing stack, from high-level software development to the underlying physics of optics and quantum systems.
+			</div>
+			<div className="info" id="description">
+				With my multidisciplinary background I am seeking opportunities in Software Development, Integrated Photonics or Quantum Research.
 			</div>
 			<div id="pro">
 				<div className="section-title">Professional Work</div>

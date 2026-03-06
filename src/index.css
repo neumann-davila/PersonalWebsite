@@ -3,7 +3,7 @@
   line-height: 1.5;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #111111;
+  background-color: #131313;
 }
 body {
   margin: 0;
@@ -39,6 +39,7 @@ body {
     color 0.2s ease-in-out; /* ← smoother & longer */
   color: white
 }
+.icon-box:hover .icon,
 .icon:hover {
   height: 30px;
   width: 30px;
@@ -137,9 +138,11 @@ body {
 }
 #description {
   width: 1100;
-  font-size: 15.5px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 18px;
+  text-align: center;
+  justify-content: center;
+  color: rgb(228, 228, 228);
+  line-height: 1.6;
 }
 .section-title{
   font-size: 38px;
@@ -174,9 +177,16 @@ body {
   flex-direction: column;
   background-color: #1d1c1c;
   padding: 14px;
-  border-radius: 3px;
-  gap: 10px
+  border-radius: 15px;
+  gap: 10px;
+  transition: all 0.6s ease
 }
+
+.content-box:hover {
+  transform: translateY(-3px); /* Move the object up */
+  box-shadow: 0 20px 25px rgba(28, 24, 85, 0.692); /* Deepen and blur the shadow */
+}
+
 #pro-box-img {
   width: 100%;
 }

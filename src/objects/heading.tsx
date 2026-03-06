@@ -12,7 +12,7 @@ export function Heading() {
             Neumann Davila
           </div>
           <div className="info">
-            ECE Undergradutate Student @ Virginia Tech
+            Electrical Engineering Undergradutate Student @ Virginia Tech
           </div>
         </div>
       </div>
