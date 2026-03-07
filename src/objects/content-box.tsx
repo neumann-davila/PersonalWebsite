@@ -41,7 +41,7 @@ export function ContentBox( {
         ))
       }
       </div>
-      <div>
+      <div className='button-group'>
         {buttons}
       </div>
     </div>

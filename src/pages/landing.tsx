@@ -4,6 +4,7 @@ import { SquareArrowOutUpRight } from 'lucide-react';
 import awsLogo from '../resources/aws-logo-1.png';
 import vtLogo from '../resources/vt-logo.png'
 import vtMates from '../resources/VTMates.png';
+import phtonicsGif from '../resources/ezgif.com-resize.gif';
 import intelliQuestLogo from '../resources/intelliQuest-logo.svg';
 import teacherAidLogo from '../resources/teacher-aid-logo.svg'
 import { Button } from "@/objects/button";
@@ -67,6 +68,7 @@ export function Landing() {
 							{ name: "Lab Experience", id: "lab-experience"},
 							{ name: "Electronics Testing", id: "electronics-testing"}
 						]}
+						buttons={[<Button id="devpost" href="https://shaogroup.ece.vt.edu/">Resaerch Group {<SquareArrowOutUpRight className="upload-icon"/>}</Button>]}
 					>
 						Assisting a PhD student with their research project studying buck converters with
 						high frequecy transistors and phototransistors in cryogenic temperatures for Quantum Technology
@@ -77,6 +79,25 @@ export function Landing() {
 			<div>
 				<div className="section-title">Projects</div>
 				<div className="project-row">
+					<ContentBox 
+						id="project-box" 
+						imgPath={phtonicsGif}
+						title="Integrated Photonics Strip Waveguide"
+						tags={[
+							{ name: "MATLAB", id: "matlab"},
+							{ name: "FDE Solver", id: "fde"},
+							{ name: "Lumerical", id: "lumerical"},
+						]}
+					>
+						Designing an ideal strip waveguide based on integrated photonics industry standard materials
+						with multiple different ways of calculattting and veriffying the dimensions determined. This started
+						with research into industry standards and the approach to take. The approach I used was the 
+						effective refractive index approach to approximate the strip into two seperate planar waveguides.
+						I then used this approach in MATLAB to estimate the width of the strip to create single mode operation.
+						From there I simulated my waveguide design in Lumerical using the FDE solver and found that it was inaccurate,
+						so I performed a width sweep in lumerical and used the data collected in Lumerical to create a plot in MATLAB
+						to find the actaul ideal width of the waveguide.
+					</ContentBox>
 					<ContentBox 
 						id="project-box" 
 						imgPath={teacherAidLogo}
@@ -106,6 +127,8 @@ export function Landing() {
 						Full stack AI chatbot tool for table top role playing games that is completely managed 
 						by the AI model.
 					</ContentBox>
+				</div>
+				<div className="project-row">
 					<ContentBox 
 						id="project-box" 
 						imgPath={vtMates}
